@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; }
+
+$_cell_margin: 1;
+$_cell_size: 20;
+$_field_size: 400px + (2 * $_cell_size * $_cell_margin);
+
+body {
+	display: flex; justify-content: center; align-items: center;
+	> div {
+		display: flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width: $_field_size; height: $_field_size;
+		> div {
+			display: inline-block; width: #{$_cell_size}px; height: #{$_cell_size}px; margin: #{$_cell_margin}px;
+
+			&.on { background-color: grey; }
+		}
+	}
+}
+
+

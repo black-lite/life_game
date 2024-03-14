@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d4d4d4;
+  width: 440px;
+  height: 440px;
+}
+body > div > div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+}
+body > div > div.on {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
